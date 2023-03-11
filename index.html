@@ -2,14 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Learning to Manipulate by Learning to See">
+  <meta name="description" content="Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations">
   <meta name="keywords" content="Robot Learning, Visual Learning, Manipuation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:site_name" content="Learning to Manipulate by Learning to See" />
+    <meta property="og:site_name" content="Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations" />
     <meta property="og:type" content="video.other" />
-    <meta property="og:title" content="Learning to Manipulate by Learning to See" />
-    <meta property="og:description" content="Learning to Manipulate by Learning to See" />
+    <meta property="og:title" content="Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations" />
+    <meta property="og:description" content="Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations" />
     <meta property="og:url" content="https://AGI-Labs.github.io/manipulate-by-seeing" />
     <meta property="og:image" content="" />
     <meta property="og:image:secure" content="" />
@@ -18,8 +18,8 @@
 
     <meta property="article:publisher" content="https://AGI-Labs.github.io/manipulate-by-seeing" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Learning to Manipulate by Learning to See" />
-    <meta name="twitter:description" content="Learning to Manipulate by Learning to See" />
+    <meta name="twitter:title" content="Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations" />
+    <meta name="twitter:description" content="Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations" />
     <meta name="twitter:url" content="" />
     <meta name="twitter:image" content="" />
     <meta name="twitter:site" content="" />
@@ -35,7 +35,7 @@
 
 
 
-  <title>Learning to Manipulate by Learning to See</title>
+  <title>Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -70,7 +70,7 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Learning to Manipulate by Learning to See</h2>
+          <h1 class="title is-1 publication-title">Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://www.jianrenw.com/">Jianren Wang*</a><sup></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -79,7 +79,6 @@
               <a href="http://shubhtuls.github.io/">Shubham Tulsiani</a><sup></sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a><sup></sup>
               <br /><sup></sup>Carnegie Mellon University<br />
-            <span>In submission CVPR 2023</span>
             <h6 style = "font-size:14px">*denotes equal contribution</h6>
 
           </div>
@@ -106,8 +105,16 @@
                   <span>Video</span>
                 </a>
               </span>
-
               <span class="link-block">
+                <a href=https://github.com/AGI-Labs/manipulate-by-seeing
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
                 <a target="_blank" href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -124,7 +131,7 @@
                   </span>
                   <span>Poster</span>
                 </a>
-              </span>
+              </span> -->
 
             </div>
           </div>
@@ -153,22 +160,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            While the field of visual representation learning has seen explosive growth in the past years, its spillover effects in robotics have been surprisingly limited so far. Prior work in this space used pre-trained representations to ``warm start" policy and value function learning. This approach is inherently limited, since predicting action sequences and learning value functions both require finicky algorithms and hard-to-tune networks. Instead, we propose to abandon this paradigm and directly leverage representations to control the robotic manipulator. This is made possible by the structure of the learned visual representation space: it naturally encodes relationships between states as distances. These distances can be used to plan for robot behavior by greedily selecting actions that best reach a goal state. This paper develops a simple algorithm for acquiring a distance function and dynamics predictor from pre-trained visual representations, using human collected video sequences. In addition to outperforming baselines that adopt the tradition action/value learning perspective (e.g. our method gets 90% success v.s. 65% for behavior cloning on pushing task), this approach can acquire manipulation controllers without any robot demonstrations or rollouts.
+            The field of visual representation learning has seen explosive growth in the past years, but its benefits in robotics have been surprisingly limited so far. Prior work uses generic visual representations as a basis to learn (task-specific) robot action policies (e.g. via behavior cloning). While the visual representations do accelerate learning, they are primarily used to encode visual observations. Thus, action information has to be derived purely from robot data, which is expensive to collect! In this work, we present a scalable alternative where the visual representations can help directly infer robot actions. We observe that vision encoders express relationships between image observations as \textit{distances} (e.g. via embedding dot product) that could be used to efficiently plan robot behavior. We operationalize this insight and develop a simple algorithm for acquiring a distance function and dynamics predictor, by fine-tuning a pre-trained representation on human collected video sequences. The final method is able to substantially outperform traditional robot learning baselines (e.g. 70% success v.s. 50% for behavior cloning on pick-place) on a suite of diverse real-world manipulation tasks. It can also generalize to novel objects, without using any robot demonstrations during train time.
         </div>
       </div>
     </div>
     </div>
   </div>
 </section>
-
-    <div class="is-vcentered interpolation-panel"> 
-      <h2 class="title is-2" style="text-align: center;">Short Talk</h2>
-      <div class="content has-text-centered"><div class="vsc-controller"></div>
-        <video id="remote" width="960" height="720" controls playsinline picture-in-picture style="border: 1px solid #bbb; border-radius: 10px;">
-          <source src="" type="video/mp4">
-        </video>
-      </div>
-    </div>
 
 <section class="section">
   <div class="container">
@@ -238,30 +236,30 @@
     <h2 class="title is-2" style="text-align: center;">Experiment Videos</h2>
         <br>
             <video width="640" height="480" loop muted controls picture-in-picture>
-              <source src="./resources/" type="video/mp4">
+              <source src="./resources/pushing_1.mp4" type="video/mp4">
             </video>
             <video width="640" height="480" loop muted controls picture-in-picture>
-              <source src="./resources/" type="video/mp4">
+              <source src="./resources/stack_1.mp4" type="video/mp4">
             </video>
           <br/>
           <video width="640" height="480" loop muted controls picture-in-picture>
-            <source src="./resources/" type="video/mp4"  >
+            <source src="./resources/open_1.mp4" type="video/mp4"  >
           </video>
           <video width="640" height="480" loop muted controls picture-in-picture>
-            <source src="./resources/" type="video/mp4">
+            <source src="./resources/knob_1.mp4" type="video/mp4">
           </video>
     
   </div>
 </section>
 
 <div class="is-vcentered interpolation-panel">
-  <div class="content has-text-centered">
+  <!-- <div class="content has-text-centered">
     <p style = "font-size: 16px">
       We are grateful to Bernie Zhu, Yuchu Zhang and Yuyang Wang for initial feedback on the paper. We would like to thank Joyce Hong, Yuyang Wang for helping with data collect.
       JW is supported by DARPAMCS, ONR Young Investigator, ONR muri. SD is supported by
     </p>
   </div>
-</div>
+</div> -->
 
 <footer class="footer">
   <div class="container">
