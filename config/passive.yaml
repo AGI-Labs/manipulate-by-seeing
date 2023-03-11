@@ -1,0 +1,29 @@
+batch_size: 32 
+epoch_num: 501 
+model_dir: '' 
+root_dir: '' 
+save_dir: ''
+home_pos:
+  pushing: [ -0.0913, -1.0628,  0.1788, -2.7172,  0.1337,  2.9567,  0.8425]
+  pick_and_place: [-0.0234, -0.2995,  0.2066, -2.3119,  0.3215,  3.2641,  0.5493]
+  door_opening: [-0.0748, -0.4754,  0.1646, -2.5303,  0.1321,  3.5164,  2.3322]
+  knob_turning: [-0.0469, -0.4962,  0.1681, -2.4696,  0.1360,  3.4870,  0.7997]
+model_weights:
+  d_pushing: ''
+  s_pushing: ''
+  d_pick_and_place: ''
+  s_pick_and_place: ''
+  d_door_opening: ''
+  s_door_opening: ''
+  d_knob_turning: ''
+  s_knob_turning: ''
+gripper_weights:
+  pushing: ''
+  pick_and_place: ''
+  door_opening: ''
+  knob_turning: ''
+pd_gains:
+  kq: [300., 300., 300., 300., 150., 150.,  150.]
+  kqd: [30., 30., 30., 30., 15., 15., 15.]
+ip_address: "172.16.0.1"
+r3m: True

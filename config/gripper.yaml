@@ -1,0 +1,5 @@
+batch_size: 64 
+epoch_num: 201 
+model_dir: '' 
+root_dir: '' 
+save_dir: ''
