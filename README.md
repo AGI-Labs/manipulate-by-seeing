@@ -1,6 +1,6 @@
 # Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations
 
-##### [[Project Page]](https://agi-labs.github.io/manipulate-by-seeing/) [[Paper]]() [[Video]]()
+##### [[Project Page]](https://agi-labs.github.io/manipulate-by-seeing/) [[Paper]](https://arxiv.org/abs/2303.08135)
 
 Jianren Wang<sup>*1</sup>, Sudeep Dasari<sup>*1</sup>, Mohan Kumar<sup>1</sup>, Shubham Tulsiani<sup>1</sup>, Abhinav Gupta<sup>1</sup>
 
