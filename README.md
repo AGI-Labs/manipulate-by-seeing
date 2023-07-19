@@ -80,10 +80,10 @@ The controller of dynamixel motors is borrowed from [Vikash Kumar](https://vikas
 If you find our paper or code useful, please cite our papers:
 
 ```
-@article{Wang_2023_seeing, 
-author = {Wang, Jianren and Dasari, Sudeep and Kumar, Mohan and Tulsiani, Shubham and Gupta, Abhinav}, 
-journal = {arxiv}, 
-title = {{Learning to Manipulate by Learning to See}}, 
-year = {2023} 
+@article{wang2023manipulate,
+  title={Manipulate by Seeing: Creating Manipulation Controllers from Pre-Trained Representations},
+  author={Wang, Jianren and Dasari, Sudeep and Srirama, Mohan Kumar and Tulsiani, Shubham and Gupta, Abhinav},
+  booktitle={International Conference on Computer Vision (ICCV)},
+  year={2023}
 }
 ```
